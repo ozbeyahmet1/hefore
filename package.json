@@ -11,14 +11,19 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwindcss": "^3.3.3"
   },
   "engines": {
     "node": ">=14.0.0",
     "yarn": ">=1.22.0",
     "npm": "please-use-yarn"
+  },
+  "resolutions": {
+    "webpack": "^5"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
