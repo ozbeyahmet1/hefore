@@ -32,7 +32,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial": "radial-gradient(100% 100% at 0 0,#525252 0,#464646 20%,#404040 40%,#343434 60%,#282828 80%,#222 100%)",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },

@@ -45,6 +45,7 @@
     "eslint-plugin-react-hooks": "latest",
     "husky": "^8.0.3",
     "prettier": "latest",
+    "sass": "^1.69.2",
     "typescript": "latest"
   }
 }
