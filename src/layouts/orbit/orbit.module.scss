@@ -1,0 +1,124 @@
+.orbit {
+  &__innerCircle {
+    position: absolute;
+    top: 135px;
+    right: -200px;
+    background-color: #2e2e2e4a;
+    width: 1400px;
+    height: 1400px;
+    border-radius: 50%;
+  }
+  &__outerCircle {
+    &--small {
+      position: absolute;
+      top: 60px;
+      right: -275px;
+      width: 1550px;
+      height: 1550px;
+      border: 5px solid #3a3a3a;
+      border-radius: 50%;
+    }
+    &--large {
+      position: absolute;
+      top: -15px;
+      right: -350px;
+      width: 1700px;
+      height: 1700px;
+      border: 5px solid #3a3a3a;
+      border-radius: 50%;
+    }
+  }
+  &__innerOrbit {
+    &--small {
+      position: absolute;
+      top: 75px;
+      right: 75px;
+      width: 1550px;
+      height: 1550px;
+      border-radius: 100%;
+      -webkit-animation: spin-left 50s linear infinite;
+      animation: spin-left 50s linear infinite;
+    }
+    &--large {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 1700px;
+      height: 1700px;
+      border-radius: 50%;
+      -webkit-animation: spin-right 100s linear infinite;
+      animation: spin-right 100s linear infinite;
+    }
+  }
+  &__innerOrbitCircles {
+    &--white {
+      position: absolute;
+      top: 280px;
+      right: 150px;
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      background-color: white;
+    }
+    &--orange {
+      position: absolute;
+      top: 335px;
+      right: 150px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: var(--orange);
+    }
+    &--pink {
+      position: absolute;
+      top: 310px;
+      right: 1500px;
+      height: 50px;
+      width: 50px;
+      background-color: var(--pink);
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+  }
+  &__circle {
+    &--yellow {
+      width: 80px;
+      height: 80px;
+      border: 10px solid var(--orange);
+      position: absolute;
+      top: 600px;
+      right: 950px;
+      border-radius: 50%;
+    }
+    &--pink {
+      width: 50px;
+      height: 50px;
+      border: 10px solid var(--pink);
+      position: absolute;
+      top: 270px;
+      right: 250px;
+      border-radius: 50%;
+    }
+  }
+}
+
+/* ---------- Animations ---------- */
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
