@@ -5,11 +5,20 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+    },
+    fontFamily: {
+      montserrat: ['Montserrat', 'sans-serif']
+    },
     colors: {
       pink: "#db00ff",
-      yellow: "#ffa800"
+      yellow: "#ffa800",
+      black: "#1b1b1b",
+      white: "#ffffff"
     },
     screens: {
       xs: "450px",

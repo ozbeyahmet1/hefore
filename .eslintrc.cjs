@@ -47,6 +47,7 @@ module.exports = {
       {
         groups: ["builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"],
         alphabetize: { order: "asc", caseInsensitive: true },
+        pathGroups: [{ pattern: "~/**", group: "external" }],
       },
     ],
   },
