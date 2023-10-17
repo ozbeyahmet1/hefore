@@ -1,10 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "./default/_typography.scss";
+@import "./imports";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-body,
 html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: auto !important;
+  background: radial-gradient(
+    100% 100% at 0 0,
+    #525252 0,
+    #464646 20%,
+    #404040 40%,
+    #343434 60%,
+    #282828 80%,
+    #222 100%
+  );
+  min-height: 100vh;
+  z-index: 99;
+}
+
+body {
   color: rgb(var(--foreground-rgb));
   background: radial-gradient(
     100% 100% at 0 0,
@@ -15,18 +39,11 @@ html {
     #282828 80%,
     #222 100%
   );
-  scroll-behavior: auto;
   -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-  height: 100%;
-  overflow-x: hidden;
   position: relative;
-  padding: 0;
-  margin: 0;
-  width: 100vw;
   height: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  z-index: 2;
 }
 
 body::before {
@@ -36,9 +53,21 @@ body::before {
   content: "";
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
+  bottom: 0;
+  z-index: -1;
+}
+
+body,
+html,
+body::before {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding-top: 70px;
 }
