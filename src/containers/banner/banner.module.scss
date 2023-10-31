@@ -1,0 +1,172 @@
+.banner {
+  z-index: 99;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+  margin-bottom: 140px;
+  &_slogan {
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+    opacity: 0;
+  }
+  &_buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &_button {
+    &--pink {
+      background-color: var(--pink);
+    }
+    &--pink,
+    &--white {
+      padding: 10px 40px;
+      border: 1px solid white;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.3s;
+      &:hover {
+        background-color: var(--grey);
+      }
+    }
+  }
+}
+
+@include sm {
+  .banner {
+    flex-direction: column-reverse;
+    padding-top: 30px;
+    margin-bottom: 60px;
+    &_slogan {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: center;
+      gap: 10px;
+    }
+    &_image {
+      width: 325px;
+      height: 200px;
+    }
+  }
+}
+
+@include md {
+  .banner {
+    padding-top: 30px;
+    margin-bottom: 80px;
+    &_slogan {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: start;
+      gap: 10px;
+    }
+    &_image {
+      width: 390px;
+      height: 240px;
+    }
+  }
+}
+
+@include lg {
+  .banner {
+    padding-top: 30px;
+    margin-bottom: 80px;
+    &_slogan {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: start;
+      gap: 10px;
+    }
+    &_image {
+      width: 520px;
+      height: 320px;
+    }
+  }
+}
+
+@include xl {
+  .banner {
+    padding-top: 30px;
+    margin-bottom: 100px;
+    &_slogan {
+      font-size: 65px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: start;
+      gap: 10px;
+    }
+    &_image {
+      width: 585px;
+      height: 385px;
+    }
+  }
+}
+
+@include xxl {
+  .banner {
+    margin-bottom: 120px;
+    padding-top: 30px;
+    &_slogan {
+      font-size: 80px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: start;
+      gap: 10px;
+    }
+    &_image {
+      width: 650px;
+      height: 400px;
+    }
+  }
+}
+
+@include xxxl {
+  .banner {
+    padding-top: 30px;
+    &_slogan {
+      font-size: 85px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      line-height: 1.3;
+    }
+    &_buttonWrapper {
+      justify-content: start;
+      gap: 10px;
+    }
+    &_image {
+      width: 715px;
+      height: 465px;
+    }
+  }
+}
