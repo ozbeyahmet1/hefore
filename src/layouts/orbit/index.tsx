@@ -3,7 +3,7 @@ export interface IAppProps {}
 
 export default function Orbit() {
   return (
-    <div>
+    <div className={styles["orbit"]}>
       <div className={styles["orbit__innerCircle"]}></div>
       <div className={styles["orbit__outerCircle--small"]}></div>
       <div className={styles["orbit__outerCircle--large"]}>

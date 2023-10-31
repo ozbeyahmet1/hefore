@@ -1,0 +1,25 @@
+.slideIn {
+  animation: slideIn 0.6s normal;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-60px);
+    opacity: 1;
+  }
+}
