@@ -1,5 +1,5 @@
 import Button from "@/components/ui/button";
-import { PropsWithSectionType } from "@/types/homepage";
+import { PropsWithSectionType } from "@/helpers/types";
 
 export default function Banner5({ data: { buttons, headline } }: PropsWithSectionType) {
   return (

@@ -1,6 +1,6 @@
 import Button from "@/components/ui/button";
+import { PropsWithSectionType } from "@/helpers/types";
 import useIntersectionObserver from "@/hooks/useIntersectionObserver";
-import { PropsWithSectionType } from "@/types/homepage";
 import Image from "next/image";
 import { useEffect } from "react";
 
