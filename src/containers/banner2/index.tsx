@@ -19,7 +19,9 @@ export default function Banner2({ data: { buttons, image, headline, content } }:
       <div className="banner2_block" ref={ref}>
         {image && <Image src={image.src} alt={image.alt} width={700} height={440} className="banner2_image" />}
         <div className="banner2--right">
-          <p className="banner2_content" id="banner2_content">{content}</p>
+          <p className="banner2_content" id="banner2_content">
+            {content}
+          </p>
           {buttons?.map((item, key) => {
             return (
               <Button key={key} className={item.variant} as="a" href={item.href}>
