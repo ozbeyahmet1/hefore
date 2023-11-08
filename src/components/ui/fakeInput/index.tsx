@@ -1,9 +1,12 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import { RiCommandFill } from "react-icons/ri";
 
-export default function Input() {
+interface FakeInputProps {
+  onClick: () => void;
+}
+export default function FakeInput({ onClick }: FakeInputProps) {
   return (
-    <div className="inputComponent">
+    <div className="inputComponent" onClick={onClick}>
       <AiOutlineSearch size={30} className="inputComponent_icon" />
       <p className="inputComponent_input">Search</p>
       <div className="inputComponent_button">
