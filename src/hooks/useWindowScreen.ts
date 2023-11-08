@@ -11,7 +11,7 @@ const useWindowScreen = (): WindowScreen => {
   // Create a state variable and a setter function named windowScreen.
   // Initialize them with the initial window dimensions.
   const [windowScreen, setWindowScreen] = useState<WindowScreen>(() => {
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       return {
         width: window.innerWidth,
         height: window.innerHeight,

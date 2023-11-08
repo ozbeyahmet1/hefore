@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 const useIntersectionObserver = (
   className: string = "",
   threshold: number = 0,
+  // Threshold is like visibility ration
 ): [boolean, React.RefObject<HTMLDivElement>] => {
   // State variables to track intersection and rendering state
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -17,9 +18,6 @@ const useIntersectionObserver = (
     // Create a new IntersectionObserver
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Log the intersection entry
-        console.log({ entry });
-
         // Update the state based on intersection
         setIsIntersecting(entry.isIntersecting);
 

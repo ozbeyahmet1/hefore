@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Banner({ data: { buttons, image, slogan } }: PropsWithSectionType) {
-  const [isIntersecting, ref] = useIntersectionObserver("banner", 0.4);
+  const [isIntersecting, ref] = useIntersectionObserver("banner_slogan", 0.2);
   useEffect(() => {
     const target = document.getElementById("banner_slogan") as HTMLElement;
     if (isIntersecting) {
@@ -14,9 +14,9 @@ export default function Banner({ data: { buttons, image, slogan } }: PropsWithSe
     }
   }, [isIntersecting]);
   return (
-    <section className="banner" ref={ref}>
+    <section className="banner">
       <div>
-        <h1 className="banner_slogan" id="banner_slogan">
+        <h1 className="banner_slogan" id="banner_slogan" ref={ref}>
           {slogan}
         </h1>
         <div className="banner_buttonWrapper">

@@ -1,10 +1,16 @@
 import Button from "@/components/ui/button";
 import ConnectWallet from "@/components/ui/connect-button";
-import Input from "@/components/ui/input";
+import FakeInput from "@/components/ui/fakeInput";
+import { openSearchModal } from "@/store/slices/uiSlice";
 import Image from "next/image";
 import { RiMenu3Line } from "react-icons/ri";
+import { useDispatch } from "react-redux";
 import navbarData from "../../data/navbar.json";
+
 export default function Navbar() {
+  const dispatch = useDispatch();
+  const openSearchModalFunc = () => dispatch(openSearchModal());
+
   return (
     <header className="header">
       <div className="container">
@@ -20,7 +26,7 @@ export default function Navbar() {
             })}
           </nav>
           <div className="header--right">
-            <Input />
+            <FakeInput onClick={openSearchModalFunc} />
             <ConnectWallet />
             <RiMenu3Line size={30} className="header_menu" />
           </div>
