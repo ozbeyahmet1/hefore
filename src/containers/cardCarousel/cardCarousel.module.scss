@@ -1,0 +1,29 @@
+.cardCarousel {
+  z-index: 999;
+  position: relative;
+  &--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &_headline {
+    font-size: 28px;
+    color: white;
+  }
+  &_buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button {
+      background-color: transparent;
+      border: 2px solid #b4b4b4;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        background-color: var(--pink);
+      }
+    }
+  }
+}
