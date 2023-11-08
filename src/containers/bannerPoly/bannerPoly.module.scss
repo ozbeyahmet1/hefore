@@ -1,4 +1,4 @@
-.bannerX {
+.bannerPoly {
   z-index: 99;
   position: relative;
   display: flex;
@@ -49,7 +49,7 @@
 }
 
 @include sm {
-  .bannerX {
+  .bannerPoly {
     margin-bottom: 60px;
     &_headline {
       font-size: 28px;
@@ -80,7 +80,7 @@
 }
 
 @include md {
-  .bannerX {
+  .bannerPoly {
     margin-bottom: 80px;
     &_headline {
       font-size: 28px;
@@ -100,7 +100,7 @@
 }
 
 @include lg {
-  .bannerX {
+  .bannerPoly {
     margin-bottom: 80px;
     &_headline {
       font-size: 32px;
@@ -120,7 +120,7 @@
 }
 
 @include xl {
-  .bannerX {
+  .bannerPoly {
     margin-bottom: 100px;
     &_image {
       width: 315px;
@@ -130,7 +130,7 @@
 }
 
 @include xxl {
-  .bannerX {
+  .bannerPoly {
     margin-bottom: 120px;
     &_image {
       width: 350px;

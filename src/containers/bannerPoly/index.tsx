@@ -15,7 +15,7 @@ export default function BannerX({
   },
   flexDirection,
 }: BannerProps) {
-  const [isIntersecting, ref] = useIntersectionObserver("bannerX_content", 0.3);
+  const [isIntersecting, ref] = useIntersectionObserver("bannerPoly_content", 0.3);
   useEffect(() => {
     if (isIntersecting && ref.current) {
       ref.current.classList.add("slideDown");
@@ -50,11 +50,13 @@ export default function BannerX({
   }
 
   return (
-    <section className="bannerX">
-      <h1 className="bannerX_headline">{headline}</h1>
+    <section className="bannerPoly">
+      <h1 className="bannerPoly_headline">{headline}</h1>
       <div
         className={
-          flexDirection == "row" ? "bannerX_block bannerX_block--row" : "bannerX_block bannerX_block--reverse"
+          flexDirection == "row"
+            ? "bannerPoly_block bannerPoly_block--row"
+            : "bannerPoly_block bannerPoly_block--reverse"
         }>
         {image && (
           <Image
@@ -64,8 +66,8 @@ export default function BannerX({
             height={imageDataSet().height ? imageDataSet().height : 0}
           />
         )}
-        <div className="bannerX--right">
-          <p className="bannerX_content" id="bannerX_content" ref={ref}>
+        <div className="bannerPoly--right">
+          <p className="bannerPoly_content" id="bannerPoly_content" ref={ref}>
             {content}
           </p>
           {buttons?.map((item, key) => {
