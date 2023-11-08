@@ -1,0 +1,105 @@
+@import "../../styles/default/mixins";
+
+.header {
+  background-color: var(--black);
+  padding: 10px 0;
+  position: fixed;
+  z-index: 999;
+  color: white;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &_button {
+    transition: all 0.3s;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: white;
+    line-height: 1;
+    text-decoration: none;
+    &:hover {
+      color: var(--orange);
+    }
+  }
+  &_nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &_inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &--right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@include sm {
+  .header {
+    .container {
+      justify-content: space-between;
+    }
+    &_nav {
+      display: none;
+    }
+    &_inline {
+      justify-content: end;
+    }
+  }
+}
+
+@include md {
+  .header {
+    .container {
+      justify-content: space-between;
+    }
+    &_nav {
+      display: none;
+    }
+    &_inline {
+      justify-content: end;
+    }
+  }
+}
+
+@include lg {
+  .header {
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@include xl {
+  .header {
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@include xxl {
+  .header {
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@include xxxl {
+  .header {
+    &_menu {
+      display: none;
+    }
+  }
+}

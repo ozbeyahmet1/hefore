@@ -1,0 +1,25 @@
+//Components
+@import "../components/ui/input/input.module.scss";
+@import "../components/ui/connect-button/connect-button.module.scss";
+@import "../components/cards/ntfCard/nftCard.module.scss";
+
+//Layouts
+@import "../layouts/navbar/navbar.module.scss";
+@import "../layouts/footer/footer.module.scss";
+
+// Default
+@import "./default/animation";
+@import "./default/_typography.scss";
+@import "./default/variables";
+@import "./default/common";
+
+//Containers
+@import "../containers/banner/banner.module.scss";
+@import "../containers/banner2/banner2.module.scss";
+@import "../containers/banner3/banner3.module.scss";
+@import "../containers/banner4/banner4.module.scss";
+@import "../containers/banner5/banner5.module.scss";
+@import "../containers/cardCarousel/cardCarousel.module.scss";
+
+//Pages
+@import "./pages/homepage.module.scss";

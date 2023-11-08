@@ -1,0 +1,24 @@
+{
+  "id": "navbar-data",
+  "logo": {
+    "src": "https://res.cloudinary.com/droheqpxn/image/upload/v1646281827/hefore/hefore_1_pjkipc.png",
+    "alt": "Hefore Logo"
+  },
+  "items": [
+    {
+      "id": 1,
+      "path": "/marketplace",
+      "content": "Marketplace"
+    },
+    {
+      "id": 2,
+      "path": "/create",
+      "content": "Create"
+    },
+    {
+      "id": 3,
+      "path": "/dashboard",
+      "content": "Dashboard"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+@import "../../../styles/default/mixins";
+.connectWallet {
+  padding: 10px 16px;
+  white-space: nowrap;
+  border: 2px solid grey;
+  height: 100%;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    border: 2px solid white;
+    background-color: gray;
+  }
+  p {
+    display: block;
+  }
+}
+
+@include sm {
+  .connectWallet {
+    padding: 4px 8px 2px;
+    p {
+      display: none;
+    }
+  }
+}
+
+@include md {
+  .connectWallet {
+    padding: 4px 8px 2px;
+    p {
+      display: none;
+    }
+  }
+}
+
+@include lg {
+  .connectWallet {
+    padding: 4px 8px 2px;
+    p {
+      display: none;
+    }
+  }
+}
+
+@include xl {
+  .connectWallet {
+    svg {
+      display: none;
+    }
+  }
+}
+
+@include xxl {
+  .connectWallet {
+    svg {
+      display: none;
+    }
+  }
+}
+
+@include xxxl {
+  .connectWallet {
+    svg {
+      display: none;
+    }
+  }
+}
